@@ -1,0 +1,46 @@
+:root {
+    --color-text: #1a1a1a;
+    --color-link: #ff186b;
+    --bg: #EDEDED;
+    --bg-alt: #E3DBD9;
+}
+::selection {
+    background-color: var(--color-link);
+    color: var(--bg);
+}
+body {
+    background-color: var(--bg);
+}
+.section__bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.component__badges img {
+    min-width: 7vw;
+}
+
+.button-link {
+    background-color: var(--color-link);
+}
+.button {
+    background-color: var(--color-text);
+}
+
+h1, h2, h3, h4, h5, h5, p {
+    color: var(--color-text);
+}
+
+.component__hero {
+    background-image: url('../img/xl-left.png'), url('../img/xl-right.png');
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .component__badges img {
+        min-width: 18vw;
+    }
+    .component__hero {
+        background-image: url('../img/small-left.png'), url('../img/small-right.png');
+    }
+}
