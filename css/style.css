@@ -36,6 +36,7 @@ h1, h2, h3, h4, h5, h5, p {
 h1, h2 {
     font-family: 'atera', sans-serif;
     font-weight: bold;
+    text-wrap: balance;
 }
 
 .component__hero {
