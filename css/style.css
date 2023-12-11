@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'atera';
+    src: url('../type/atera-bold.woff2') format('woff2');
+  }
 :root {
     --color-text: #1a1a1a;
     --color-link: #ff186b;
@@ -28,6 +32,9 @@ body {
 
 h1, h2, h3, h4, h5, h5, p {
     color: var(--color-text);
+}
+h1, h2 {
+    font-weight: bold;
 }
 
 .component__hero {
