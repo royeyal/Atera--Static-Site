@@ -1,6 +1,9 @@
 @font-face {
     font-family: 'atera';
     src: url('../type/atera-bold.woff2') format('woff2');
+    font-display: swap;
+    font-weight: bold;
+    font-style: normal;
   }
 :root {
     --color-text: #1a1a1a;
@@ -30,10 +33,10 @@ body {
     background-color: var(--color-text);
 }
 
-h1, h2, h3, h4, h5, h5, p {
+h1, h2, h3, h4, h5, h6, p {
     color: var(--color-text);
 }
-h1, h2 {
+h1, h2, h3 {
     font-family: 'atera', sans-serif;
     font-weight: bold;
     text-wrap: balance;
@@ -43,6 +46,7 @@ h1, h2 {
     background-image: url('../img/xl-left.png'), url('../img/xl-right.png');
     background-position: top left, top right;
     background-repeat: no-repeat;
+    background-size: contain;
 }
 
 @media screen and (max-width: 768px) {
